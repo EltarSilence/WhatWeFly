@@ -9,7 +9,7 @@
 <body>
 	<h3>Generatore casuale di tratta</h3>
 	<form name="form1" method="GET" action="" onsubmit="return validity()">
-		<table border="1">
+		'<table border="1">
 			<tr>
 				<td>Round Robin?</td>
 				<td>NO <input type="radio" id="robin" name="robin" value="no">
