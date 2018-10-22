@@ -127,11 +127,10 @@ function showDistance($conn, $dep, $arr){
 	}
 
 	$distance = getDistance(floatval($lon_dep), floatval($lat_dep), floatval($lon_arr), floatval($lat_arr));
-	echo 'distanza: '. $distance;
+	echo '<br>Distanza: '. $distance;
 }
 
 if (isset($_GET['abroad'])) {
-
 
 	switch ($_GET['abroad']) {
 		case 'si':
@@ -174,42 +173,6 @@ if (isset($_GET['abroad'])) {
 			break;
 	}
 
-/* CONDIZIONI ERRATE!!!
-
-	if ($_GET['abroad'] == "no" && $_GET['robin'] == "si"){
-		//vola in italia round robin
-		$icao = getICAOfromIT($conn);
-		echo 'TRATTA: ' . $icao . ' - ' . $icao . '';
-		echo 'Distanza: /';
-	}
-	elseif ($_GET['abroad'] == "no" && $_GET['robin'] == "no"){
-		//vola in italia normale
-		$a = getICAOfromIT($conn);
-		$b = getICAOfromIT($conn);
-		if (preventDuplicate($a, $b)) {
-			showDepArr($a, $b);
-			showDistance($conn, $a, $b);
-		}
-		else redir(false);
-	}
-	else {
-		//volo estero round robin
-		$icao = getICAOfromABROAD($conn);
-		echo 'TRATTA: '.$icao.' - '.$icao.'';
-		echo 'Distanza: /';
-	}
-}
-
-if ($_GET['abroad']=="si" && $_GET['robin'=="no"]){
-	//volo esterno normale
-	$a = getICAOfromABROAD($conn);
-	$b = getICAOfromABROAD($conn);
-	if (preventDuplicate($a, $b)) {
-		showDepArr($a, $b);
-		showDistance($conn, $a, $b);
-	}
-	else redir(false);
-	*/
 }
 
 

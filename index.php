@@ -23,14 +23,16 @@
 					SI <input type="radio" name="abroad" id="abroad" value="si">
 				</td>
 			</tr>
+			<!--
 			<tr>
 				<td>Da stato a stato</td>
 				<td>
 					NO <input type="radio" name="states" value="no" checked="checked" onchange="showStates()">
 					SI <input type="radio" name="states" value="si" onchange="showStates()">
-					<?php require 'state_list.html'; ?>
+					<?php #require 'state_list.html'; ?>
 				</td>
 			</tr>
+		-->
 
 			<tr>
 				<td colspan="2">
@@ -44,7 +46,7 @@
 
 <?php
 	require 'api.php';
-?>	
+?>
 
 </body>
 </html>
