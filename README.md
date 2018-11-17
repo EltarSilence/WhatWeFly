@@ -1,4 +1,4 @@
-# What-We-Fly-Created-in-cooperation-with-EltarSilence
+# What-We-Fly
 
 
 DESCRIPTION:
