@@ -2,7 +2,7 @@
 const DUPLICATE_ERROR = "Errore: ricarica la pagina.";
 
 
-$db_giorgio = array('servername' => "techaviationflight.com.mysql:3306", 'username' => 'techaviationflight_com_whatwefly', 'password' => "yuorpassword");
+$db_giorgio = array('servername' => "techaviationflight.com.mysql:3306", 'username' => 'UID', 'password' => "yuorpassword");
 $db_gio = array('servername' => 'localhost', 'username' => 'root', 'password' => '');
 
 foreach ($db_giorgio as $key => $value) {
